@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -ms-overflow-style: none; /*scrollbar oculta para IE e Edge*/
+  scrollbar-width: none; /*scrollbar oculta para Firefox*/
+  font-size: 14px;
+  font-weight: 400;
+  color: #262626;
+}
+
+body::-webkit-scrollbar {
+  display: none; /*scrollbar oculta para Chrome, Safari e Opera*/
+}
+
+.navbar {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.topo-desktop {
+  width: 935px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pesquisar input {
+  width: 215px;
+  height: 28px;
+  font-size: 12px;
+  color: #979797;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.icones {
+  width: 169px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.logo-insta {
+  width: 146px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-insta > img {
+  width: 103px;
+  height: 29px;
+}
+
+.logo-insta > div {
+  width: 1px;
+  height: 22px;
+  background-color: #dbdbdb;
+}
+
+.container-conteudo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.caixa-feed {
+  width: 614px;
+  margin-top: 88px;
+  background-color: #fafafa;
+}
+
+.caixa-sidebar {
+  width: 293px;
+  height: 444px;
+  margin-left: 29px;
+  position: sticky;
+  top: 105px;
+}
+
+.usuario-sidebar {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.usuario-sidebar img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.identificacao {
+  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+.identificacao :first-child {
+  font-weight: 500px;
+  margin-bottom: 1px;
+}
+
+.identificacao :last-child {
+  font-weight: 300;
+  color: #9b9b9b;
+}
+
+.caixaSugestao {
+  width: 100%;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin-top: 30px;
+}
+
+.titulo {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.titulo h1 {
+  color: #8e8e8e;
+}
+
+.sugestao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sugestao-usuario {
+  display: flex;
+}
+
+.sugestao-usuario img {
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+  border-radius: 50%;
+}
+.legendaSugestao {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.legendaSugestao :first-child {
+  font-weight: 500px;
+  margin-bottom: 4px;
+}
+
+.legendaSugestao :last-child {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.seguir {
+  font-size: 12px;
+  font-weight: 500;
+  color: #139ef2;
+}
+
+.links,
+.copyright {
+  width: 100%;
+  font-size: 11px;
+  line-height: 12px;
+  color: #c7c7c7;
+}
+
+.links {
+  margin-bottom: 20px;
+  margin-top: 36px;
+} 
+
+.caixa-stories {
+  width: 100%;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.seta-stories {
+  font-size: 32px;
+  color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4 4 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 43px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.story {
+  width: 66px;
+  height: 85px;
+  font-size: 12px;
+  font-weight: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.caixa-stories .story:first-child {
+  margin-left: 14px;
+}
+
+.story-background {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+}
+
+.imagem-story {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+}
+
+.usuario-story {
+  width: 66px;
+  height: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.caixa-posts {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.post {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.topo-post {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.usuario-topo-post {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.usuario-topo-post img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.acoes ion-icon {
+  font-size: 16px;
+}
+
+.conteudo-post img, 
+.conteudo-post video {
+  width: 100%;
+}
+
+.reacoes-post {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.reacoes-post ion-icon {
+  margin-left: 14px;
+}
+
+.reacoes-post :last-child {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.curtidas {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.curtidas p {
+  font-weight: 300;
+}
+
+.curtidas strong {
+  font-weight: 500;
+}
+
+.curtidas img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.ver-comentarios {
+  width: 100%;
+  height: 20px;
+  color: #8e8e8e;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.comentario {
+  width: 100%;
+  height: 20px;
+  font-weight: 300;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.comentario strong {
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.comentario ion-icon {
+  font-size: 12px;
+  position: absolute;
+  top: 4px;
+  right: 12px;
+}
+
+.publicar-comentario {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 10px;
+}
+
+.digitar-comentario {
+  width: 100%;
+  display: flex;
+}
+
+.digitar-comentario ion-icon {
+  margin: 0 15px;
+}
+
+.digitar-comentario input {
+  font-weight: 300;
+  border-style: hidden;
+  outline: none;
+}
+
+.botao-publicar {
+  font-weight: 500;
+  color: #b2dffc;
+  margin-right: 15px;
+}
+
+.botao-publicar:hover {
+  color: #0095f6;
+  transition: color 300ms;
+}
+
+.topo-mobile {
+  display: none;
+}
+
+.base-mobile {
+  display: none;
+}
+
+ion-icon {
+  font-size: 22px;
+}
+
+/*breakpoint 935px*/
+@media (max-width: 935px) {
+  .caixa-sidebar {
+    display: none;
+  }
+
+  .topo-desktop {
+    padding: 0 3%;
+  }
+}
+
+/*breakpoint 614px*/
+@media (max-width: 614px) {
+  .topo-desktop {
+    display: none;
+  }
+
+  .topo-mobile {
+    width: 100%;
+    height: 54px;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topo-mobile :last-child {
+    cursor: pointer;
+  }
+
+  .caixa-feed {
+    width: 100%;
+    margin-top: 54px;
+  }
+
+  .caixa-stories {
+    width: 100%;
+    height: 118px;
+    border: hidden;
+    background-color: transparent;
+  }
+
+  .seta-stories {
+    display: none;
+  }
+
+  .caixa-posts {
+    margin-top: 0;
+  }
+
+  .post {
+    height: auto;
+    border-radius: 0;
+  }
+
+  .base-mobile {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 3%;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+  }
+}
