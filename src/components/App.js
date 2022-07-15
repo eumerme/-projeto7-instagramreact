@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
-import ContainerConteudo from "./ContainerConteudo";
-import BaseMobile from "./BaseMobile";
+import Navbar from "./Header/Navbar";
+import ContainerConteudo from "./Main/ContainerConteudo";
+import BaseMobile from "./Footer/BaseMobile";
 
 export default function App () {
     return (

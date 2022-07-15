@@ -1,13 +1,4 @@
-export default function Navbar () {
-    return (
-        <div class="navbar">
-            <TopoDesktop />
-            <TopoMobile />
-        </div>
-    );
-}
-
-function TopoDesktop () {
+export default function TopoDesktop () {
     return (
         <div class="topo-desktop">
           <div class="logo-insta">
@@ -26,16 +17,6 @@ function TopoDesktop () {
                 <ion-icon name="heart-outline"></ion-icon>
                 <ion-icon name="person-outline"></ion-icon>
           </div>
-        </div>
-    );
-}
-
-function TopoMobile () {
-    return (
-        <div class="topo-mobile">
-            <ion-icon name="logo-instagram"></ion-icon>
-            <img src="./images/logo.png" alt=""/>
-            <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
     );
 }

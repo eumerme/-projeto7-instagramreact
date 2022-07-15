@@ -10,7 +10,7 @@ const postArray = [
         curtidoPorNomes:"trontron, cristal_cristal",
         curtidoPorOutros:"outras 67 pessoas",
         quantidadeComentarios:"Ver todos os 6 comentários",
-        cementadoPor:"cristal_cristal",
+        comentadoPor:"cristal_cristal",
         comentarioTexto:"quem é esse gatinho aí?? ^^"
     },
     {
@@ -22,7 +22,7 @@ const postArray = [
         curtidoPorNomes:"elis_regina, pingo",
         curtidoPorOutros:"outras 101 pessoas",
         quantidadeComentarios:"Ver todos os 15 comentários",
-        cementadoPor:"trontron",
+        comentadoPor:"trontron",
         comentarioTexto:"êee soneiraaaa kkkk"
     },
     {
@@ -34,7 +34,7 @@ const postArray = [
         curtidoPorNomes:"simba, melzinha",
         curtidoPorOutros:"outras 147 pessoas",
         quantidadeComentarios:"Ver todos os 16 comentários",
-        cementadoPor:"elis_regina",
+        comentadoPor:"elis_regina",
         comentarioTexto:"que bruxaria é essa?! *o*",
     },
     {
@@ -46,7 +46,7 @@ const postArray = [
         curtidoPorNomes:"simba, melzinha",
         curtidoPorOutros:"outras 55 pessoas",
         quantidadeComentarios:"Ver todos os 4 comentários",
-        cementadoPor:"m4lu",
+        comentadoPor:"m4lu",
         comentarioTexto:"fofuxo s2"
     },
     {
@@ -58,7 +58,7 @@ const postArray = [
         curtidoPorNomes:"ana_hick, akaashi",
         curtidoPorOutros:"outras 84 pessoas",
         quantidadeComentarios:"Ver todos os 7 comentários",
-        cementadoPor:"pingo",
+        comentadoPor:"pingo",
         comentarioTexto:"awnnn, são seus parentes??"
     }
 ];
@@ -75,7 +75,7 @@ export default function CaixaPosts () {
                                         curtidoPorNomes={postItem.curtidoPorNomes}
                                         curtidoPorOutros={postItem.curtidoPorOutros}
                                         quantidadeComentarios={postItem.quantidadeComentarios}
-                                        cementadoPor={postItem.cementadoPor}
+                                        comentadoPor={postItem.comentadoPor}
                                         comentarioTexto={postItem.comentarioTexto}
                                     />)
             }
