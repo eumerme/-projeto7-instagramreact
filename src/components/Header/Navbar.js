@@ -3,7 +3,7 @@ import TopoMobile from "./TopoMobile";
 
 export default function Navbar () {
     return (
-        <div class="navbar">
+        <div className="navbar">
             <TopoDesktop />
             <TopoMobile />
         </div>

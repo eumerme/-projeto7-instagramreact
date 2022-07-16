@@ -1,11 +1,11 @@
 export default function TopoPost (props) {
     return (
-        <div class="topo-post">
-            <div class="usuario-topo-post">
+        <div className="topo-post">
+            <div className="usuario-topo-post">
                 <img src={props.topoImagemUsuario} alt=""/>
                 <p>{props.topoNomeUsuario} </p>
             </div>                    
-            <div class="acoes">
+            <div className="acoes">
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
         </div>  

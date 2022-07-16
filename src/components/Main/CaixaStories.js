@@ -55,14 +55,14 @@ const storyArray = [
 
 export default function CaixaStories () {
     return (
-        <div class="caixa-stories">
-            {storyArray.map(storyItem => <Story  
-                                            storiesBackground={storyItem.storiesBackground}
-                                            storyImagemUsuario={storyItem.storyImagemUsuario}
-                                            storyNomeUsuario={storyItem.storyNomeUsuario}
-                                        />)
-            }
-            <img class="seta-stories" src="./images/seta-stories.png" alt=""/>
+        <div className="caixa-stories">
+            {storyArray.map((storyItem, index)=> <Story  
+                                                    key={index}
+                                                    storiesBackground={storyItem.storiesBackground}
+                                                    storyImagemUsuario={storyItem.storyImagemUsuario}
+                                                    storyNomeUsuario={storyItem.storyNomeUsuario}
+                                                />)}
+            <img className="seta-stories" src="./images/seta-stories.png" alt=""/>
         </div>
     );
 }

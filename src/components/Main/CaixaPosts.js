@@ -35,7 +35,17 @@ const postArray = [
         curtidoPorOutros:"outras 147 pessoas",
         quantidadeComentarios:"Ver todos os 16 comentários",
         comentadoPor:"elis_regina",
-        comentarioTexto:"que bruxaria é essa?! *o*",
+        comentarioTexto:"que bruxaria é essa?! *o*"
+        /* comentario:[
+            {
+                comentadoPor:"elis_regina",
+                comentarioTexto:"que bruxaria é essa?! *o*"
+            }, 
+            {
+                comentadoPor:"jade_beatriz",
+                comentarioTexto:"é fake"
+            }
+        ] */
     },
     {
         topoImagemUsuario:"./images/jupiter.png",
@@ -65,20 +75,21 @@ const postArray = [
 
 export default function CaixaPosts () {
     return (
-        <div class="caixa-posts">
-           {postArray.map(postItem => <Post 
-                                        topoImagemUsuario={postItem.topoImagemUsuario}
-                                        topoNomeUsuario={postItem.topoNomeUsuario}
-                                        conteudo1={postItem.conteudo1}
-                                        conteudo2={postItem.conteudo2}
-                                        curtidasImagemUsuario={postItem.curtidasImagemUsuario}
-                                        curtidoPorNomes={postItem.curtidoPorNomes}
-                                        curtidoPorOutros={postItem.curtidoPorOutros}
-                                        quantidadeComentarios={postItem.quantidadeComentarios}
-                                        comentadoPor={postItem.comentadoPor}
-                                        comentarioTexto={postItem.comentarioTexto}
-                                    />)
-            }
+        <div className="caixa-posts">
+           {postArray.map((postItem, index)=> <Post 
+                                                key={index}
+                                                topoImagemUsuario={postItem.topoImagemUsuario}
+                                                topoNomeUsuario={postItem.topoNomeUsuario}
+                                                conteudo1={postItem.conteudo1}
+                                                conteudo2={postItem.conteudo2}
+                                                curtidasImagemUsuario={postItem.curtidasImagemUsuario}
+                                                curtidoPorNomes={postItem.curtidoPorNomes}
+                                                curtidoPorOutros={postItem.curtidoPorOutros}
+                                                quantidadeComentarios={postItem.quantidadeComentarios}
+                                                comentadoPor={postItem.comentadoPor}
+                                                comentarioTexto={postItem.comentarioTexto}
+                                                
+                                            />)}
         </div>
     );
 }

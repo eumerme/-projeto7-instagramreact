@@ -1,6 +1,6 @@
 export default function Curtidas (props) {
     return (
-        <div class="curtidas">
+        <div className="curtidas">
             <img src={props.curtidasImagemUsuario} alt=""/>
             <p>
                 Curtido por 

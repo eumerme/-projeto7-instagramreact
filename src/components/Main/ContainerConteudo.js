@@ -3,7 +3,7 @@ import CaixaSidebar from "./CaixaSidebar";
 
 export default function ContainerConteudo () {
    return (
-        <div class="container-conteudo">
+        <div className="container-conteudo">
             <CaixaFeed />
             <CaixaSidebar />
         </div>

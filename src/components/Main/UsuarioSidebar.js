@@ -1,8 +1,8 @@
 export default function UsuarioSidebar () {
     return (
-        <div class="usuario-sidebar">
+        <div className="usuario-sidebar">
             <img src="./images/sugestao3.png" alt=""/>
-            <div class="identificacao">
+            <div className="identificacao">
                 <div>aurorinha</div>
                 <div>Aurora</div>
             </div>

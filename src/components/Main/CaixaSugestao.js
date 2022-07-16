@@ -31,18 +31,18 @@ const sugestaoArray = [
 
 export default function CaixaSugestao () {
     return (
-        <div class="caixaSugestao">
-            <div class="titulo">
+        <div className="caixaSugestao">
+            <div className="titulo">
                 <h1>Sugestões para você</h1> 
                 <div>Ver tudo</div>
             </div> 
 
-            {sugestaoArray.map(sugestaoItens => <Sugestao 
-                                                    sugestaoImagemUsuario={sugestaoItens.sugestaoImagemUsuario}
-                                                    sugestaoNome={sugestaoItens.sugestaoNome}
-                                                    sugestaoUsername={sugestaoItens.sugestaoUsername}
-                                                />)
-            }                    
+            {sugestaoArray.map((sugestaoItens, index) => <Sugestao 
+                                                            key={index}
+                                                            sugestaoImagemUsuario={sugestaoItens.sugestaoImagemUsuario}
+                                                            sugestaoNome={sugestaoItens.sugestaoNome}
+                                                            sugestaoUsername={sugestaoItens.sugestaoUsername}
+                                                        />)}                    
         </div>
     );
 }
