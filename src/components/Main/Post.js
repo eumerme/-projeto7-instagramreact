@@ -6,8 +6,27 @@ import VerComentarios from "./VerComentarios";
 import Comentario from "./Comentario";
 
 export default function Post (props) {
+    const comentariosArray = props.comentario;
+
     let [curtirPost, setcurtirPost] = React.useState("heart-outline");
     let [coracaoVermelho, setcoracaoVermelho] = React.useState("");
+
+    const curtirDescurtirIcone = () => {
+        if(curtirPost === "heart-outline") {
+            setcoracaoVermelho(coracaoVermelho = "curtiu");
+            setcurtirPost(curtirPost = "heart");                    
+        }else {
+            setcurtirPost(curtirPost = "heart-outline");
+            setcoracaoVermelho(coracaoVermelho = "");
+        }
+    }
+
+    const curtirDescurtirConteudo = () => {
+        if(curtirPost === "heart-outline") {
+            setcoracaoVermelho(coracaoVermelho = "curtiu");
+            setcurtirPost(curtirPost = "heart");                    
+        }
+    }
 
     return (
         <div className="post">
@@ -16,25 +35,12 @@ export default function Post (props) {
                 topoNomeUsuario={props.topoNomeUsuario}
             />
 
-            <div className="conteudo-post" onClick={() => {
-                if(curtirPost === "heart-outline") {
-                    setcoracaoVermelho(coracaoVermelho = "curtiu");
-                    setcurtirPost(curtirPost = "heart");                    
-                }
-            }}>
+            <div className="conteudo-post" onClick={curtirDescurtirConteudo}>
                 {TipoDeConteudo(props)}  
             </div>  
 
             <div className="reacoes-post">
-                <ion-icon id={coracaoVermelho} name={curtirPost} onClick={() => {
-                    if(curtirPost === "heart-outline") {
-                        setcoracaoVermelho(coracaoVermelho = "curtiu");
-                        setcurtirPost(curtirPost = "heart");                    
-                    }else {
-                        setcurtirPost(curtirPost = "heart-outline");
-                        setcoracaoVermelho(coracaoVermelho = "");
-                    }
-                }}></ion-icon>
+                <ion-icon id={coracaoVermelho} name={curtirPost} onClick={curtirDescurtirIcone}></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
                 <ion-icon name="bookmark-outline"></ion-icon>
@@ -50,10 +56,10 @@ export default function Post (props) {
                 quantidadeComentarios={props.quantidadeComentarios}
             />
 
-            <Comentario 
-                comentadoPor={props.comentadoPor}
-                comentarioTexto={props.comentarioTexto}
-            />
+            {comentariosArray.map((comentario, index) => <Comentario 
+                                                                key={index}
+                                                                comentario={comentario}
+                                                        />)}
 
             <div className="publicar-comentario">
                 <div className="digitar-comentario">

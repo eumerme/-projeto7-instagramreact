@@ -66,6 +66,11 @@ body::-webkit-scrollbar {
 .logo-insta > img {
   width: 103px;
   height: 29px;
+  cursor: pointer;
+}
+
+.logo-insta > ion-icon {
+  cursor: pointer;
 }
 
 .logo-insta > div {
@@ -286,6 +291,7 @@ body::-webkit-scrollbar {
   font-weight: 500;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .usuario-topo-post img {
@@ -297,11 +303,13 @@ body::-webkit-scrollbar {
 
 .acoes ion-icon {
   font-size: 16px;
+  cursor: pointer;
 }
 
 .conteudo-post img, 
 .conteudo-post video {
   width: 100%;
+  cursor: pointer;
 }
 
 .reacoes-post {
@@ -310,6 +318,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: flex-end;
   position: relative;
+  cursor: pointer;
 }
 
 .reacoes-post ion-icon {
@@ -337,6 +346,7 @@ body::-webkit-scrollbar {
 
 .curtidas p {
   font-weight: 300;
+  cursor: pointer;
 }
 
 .curtidas strong {
@@ -359,6 +369,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 .comentario {
@@ -378,11 +389,16 @@ body::-webkit-scrollbar {
   margin-left: 15px;
 }
 
+.comentario p {
+  cursor: pointer;
+}
+
 .comentario ion-icon {
   font-size: 12px;
   position: absolute;
   top: 4px;
   right: 12px;
+  cursor: pointer;
 }
 
 .publicar-comentario {
@@ -405,6 +421,7 @@ body::-webkit-scrollbar {
 }
 
 .digitar-comentario input {
+  width: 85%;
   font-weight: 300;
   border-style: hidden;
   outline: none;
@@ -414,6 +431,7 @@ body::-webkit-scrollbar {
   font-weight: 500;
   color: #b2dffc;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .botao-publicar:hover {
@@ -500,5 +518,9 @@ ion-icon {
     padding: 3%;
     background-color: #ffffff;
     border: 1px solid #dbdbdb;
+  }
+
+  .base-mobile ion-icon {
+    cursor: pointer;
   }
 }

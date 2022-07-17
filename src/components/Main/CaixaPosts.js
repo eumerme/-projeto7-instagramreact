@@ -1,7 +1,7 @@
 import Post from "./Post";
 
 const postArray = [
-    {
+     {
         topoImagemUsuario:"./images/akaashi.png",
         topoNomeUsuario:"akaashi",
         conteudo1:"./images/gato-telefone_1.png",
@@ -10,8 +10,12 @@ const postArray = [
         curtidoPorNomes:"trontron, cristal_cristal",
         curtidoPorOutros:"outras 67 pessoas",
         quantidadeComentarios:"Ver todos os 6 comentários",
-        comentadoPor:"cristal_cristal",
-        comentarioTexto:"quem é esse gatinho aí?? ^^"
+        comentario:[
+            {
+                comentadoPor:"cristal_cristal",
+                comentarioTexto:"quem é esse gatinho aí?? ^^"
+            }
+        ]
     },
     {
         topoImagemUsuario:"./images/pan2.png",
@@ -22,9 +26,13 @@ const postArray = [
         curtidoPorNomes:"elis_regina, pingo",
         curtidoPorOutros:"outras 101 pessoas",
         quantidadeComentarios:"Ver todos os 15 comentários",
-        comentadoPor:"trontron",
-        comentarioTexto:"êee soneiraaaa kkkk"
-    },
+        comentario:[
+            {
+                comentadoPor:"trontron",
+                comentarioTexto:"êee soneiraaaa kkkk"
+            }
+        ]
+    }, 
     {
         topoImagemUsuario:"./images/post1.png",
         topoNomeUsuario:"m4lu",
@@ -34,9 +42,7 @@ const postArray = [
         curtidoPorNomes:"simba, melzinha",
         curtidoPorOutros:"outras 147 pessoas",
         quantidadeComentarios:"Ver todos os 16 comentários",
-        comentadoPor:"elis_regina",
-        comentarioTexto:"que bruxaria é essa?! *o*"
-        /* comentario:[
+        comentario:[
             {
                 comentadoPor:"elis_regina",
                 comentarioTexto:"que bruxaria é essa?! *o*"
@@ -45,7 +51,7 @@ const postArray = [
                 comentadoPor:"jade_beatriz",
                 comentarioTexto:"é fake"
             }
-        ] */
+        ]
     },
     {
         topoImagemUsuario:"./images/jupiter.png",
@@ -53,11 +59,15 @@ const postArray = [
         conteudo1:"./images/dog 1.png",
         conteudo2:"",
         curtidasImagemUsuario:"./images/jupiter.png",
-        curtidoPorNomes:"simba, melzinha",
+        curtidoPorNomes:"trontron, pandora",
         curtidoPorOutros:"outras 55 pessoas",
         quantidadeComentarios:"Ver todos os 4 comentários",
-        comentadoPor:"m4lu",
-        comentarioTexto:"fofuxo s2"
+        comentario:[
+            {
+                comentadoPor:"m4lu",
+                comentarioTexto:"fofuxo s2"
+            }
+        ]
     },
     {
         topoImagemUsuario:"./images/post2.png",
@@ -68,9 +78,17 @@ const postArray = [
         curtidoPorNomes:"ana_hick, akaashi",
         curtidoPorOutros:"outras 84 pessoas",
         quantidadeComentarios:"Ver todos os 7 comentários",
-        comentadoPor:"pingo",
-        comentarioTexto:"awnnn, são seus parentes??"
-    }
+        comentario:[
+            {
+                comentadoPor:"pingo",
+                comentarioTexto:"awnnn, são seus parentes??"
+            },
+            {
+                comentadoPor:"melzinha",
+                comentarioTexto:"que nenezinho"
+            }
+        ]
+    } 
 ];
 
 export default function CaixaPosts () {
@@ -85,10 +103,8 @@ export default function CaixaPosts () {
                                                 curtidasImagemUsuario={postItem.curtidasImagemUsuario}
                                                 curtidoPorNomes={postItem.curtidoPorNomes}
                                                 curtidoPorOutros={postItem.curtidoPorOutros}
-                                                quantidadeComentarios={postItem.quantidadeComentarios}
-                                                comentadoPor={postItem.comentadoPor}
-                                                comentarioTexto={postItem.comentarioTexto}
-                                                
+                                                quantidadeComentarios={postItem.quantidadeComentarios}   
+                                                comentario={postItem.comentario}                                            
                                             />)}
         </div>
     );
