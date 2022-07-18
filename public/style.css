@@ -111,12 +111,14 @@ body::-webkit-scrollbar {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .identificacao {
   margin-left: 17px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .identificacao :first-child {
@@ -149,6 +151,10 @@ body::-webkit-scrollbar {
   color: #8e8e8e;
 }
 
+.titulo div {
+  cursor: pointer;
+}
+
 .sugestao {
   display: flex;
   justify-content: space-between;
@@ -164,10 +170,13 @@ body::-webkit-scrollbar {
   height: 32px;
   margin-right: 14px;
   border-radius: 50%;
+  cursor: pointer;
 }
+
 .legendaSugestao {
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .legendaSugestao :first-child {
@@ -184,6 +193,7 @@ body::-webkit-scrollbar {
   font-size: 12px;
   font-weight: 500;
   color: #139ef2;
+  cursor: pointer;
 }
 
 .links,
